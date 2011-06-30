@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block custom_javascript %}
+<script src="/js/ebp-min.js" type="text/javascript" charset="utf-8"></script>
+{% endblock custom_javascript %}
+
+{% block content %}
+<div id="data">
+  <div id="spinner">
+    Loading... <br />
+    <img src="/images/ajax-loader.gif" />
+  </div>
+  <canvas id="graph"></canvas>
+</div>
+<form action="" method="post" id="ebpdata_form">
+  <fieldset>
+      <legend>EBP Data</legend>
+      <ol>
+        {% for field in form %}
+          <li>
+            {{ field.label_tag }}
+            {{ field }}
+          </li>
+        {% endfor %}
+        <li>
+          <input type="submit" class="submit" value="Update Data" />
+        </li>
+      </ol>
+  </fieldset>
+</form>
+{% endblock content %}

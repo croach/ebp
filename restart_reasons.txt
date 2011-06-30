@@ -1,0 +1,9 @@
+A - Site Swollen
+B - Site Reddened
+C - Site Painful
+D - Occluded
+E - Extravasation
+F - Red streak w/ cord
+G - Site Leaking
+H - Pulled Out
+I - Other

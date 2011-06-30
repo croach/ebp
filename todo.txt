@@ -1,0 +1,4 @@
+1) Add error reporting for form validation to the main page.
+2) Add the table of patient records to the print out.
+
+
